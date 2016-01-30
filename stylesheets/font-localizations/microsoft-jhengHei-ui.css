@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Microsoft JhengHei UI";
+  src: local("Microsoft JhengHei UI Light");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Microsoft JhengHei UI";
+  src: local("Microsoft JhengHei UI Light");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Microsoft JhengHei UI";
+  src: local("Microsoft JhengHei UI");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Microsoft JhengHei UI";
+  src: local("Microsoft JhengHei UI");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Microsoft JhengHei UI";
+  src: local("Microsoft JhengHei UI");
+  font-weight: 700;
+  font-style: normal; }
+
+body {
+  font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", Pmingliu, "Segoe UI", "Segoe UI Web", "Segoe UI Symbol", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, sans-serif; }
