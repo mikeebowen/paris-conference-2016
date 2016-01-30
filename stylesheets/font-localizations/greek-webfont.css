@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/greek/light/latest.eot");
+  src: local("Segoe UI Light"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/light/latest.eot?#iefix") format("embedded-opentype"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/light/latest.woff") format("woff"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/light/latest.ttf") format("truetype"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/light/latest.svg#web") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/greek/semilight/latest.eot");
+  src: local("Segoe UI Semilight"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/semilight/latest.eot?#iefix") format("embedded-opentype"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/semilight/latest.woff") format("woff"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/semilight/latest.ttf") format("truetype"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/semilight/latest.svg#web") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/greek/normal/latest.eot");
+  src: local("Segoe UI"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/normal/latest.eot?#iefix") format("embedded-opentype"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/normal/latest.woff") format("woff"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/normal/latest.ttf") format("truetype"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/normal/latest.svg#web") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/greek/semibold/latest.eot");
+  src: local("Segoe UI Semibold"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/semibold/latest.eot?#iefix") format("embedded-opentype"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/semibold/latest.woff") format("woff"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/semibold/latest.ttf") format("truetype"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/semibold/latest.svg#web") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url("https://i.s-microsoft.com/fonts/segoe-ui/greek/bold/latest.eot");
+  src: local("Segoe UI Bold"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/bold/latest.eot?#iefix") format("embedded-opentype"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/bold/latest.woff") format("woff"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/bold/latest.ttf") format("truetype"), url("https://i.s-microsoft.com/fonts/segoe-ui/greek/bold/latest.svg#web") format("svg");
+  font-weight: 700;
+  font-style: normal; }
