@@ -94,6 +94,19 @@ a:hover {
   clear: both;
 }
 
+/*.spacer {
+  height: 400px;
+  width: 100%;
+  display: block;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+}*/
+
+.contaceInfo {
+  /*padding-bottom: 500px;*/
+}
+
 @media all and (max-width: 1400px) {
   .header img {
     float: none;
@@ -148,4 +161,19 @@ a:hover {
   h2 {
     font-size: 3em;
   }
+}
+
+@media all and (max-height: 900px) {
+  .contaceInfo > h2 {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+  }
+
+  body { 
+  background: url(img/OFF14_Austin_Tal_Alejandro_BrittanyA_03.png) no-repeat center center fixed; 
+  -webkit-background-size: cover?;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 }
