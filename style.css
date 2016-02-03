@@ -1,15 +1,97 @@
 body { 
-  background: url(img/paris-background-small-watermark.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
+  background: url(img/OFF14_Austin_Tal_Alejandro_BrittanyA_02.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover?;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2 {
+  color: #373d3f;
+  font-size: 3em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0 !important;
+  width: 100% !important;
+  /*height: 50px !important;*/
+  background-color: #d8d9d4;
+}
+
+a:link {
+  color: #373d3f;
+}
+
+a:hover {
+  color: #f2f3f4;
+}
+
+.header {
+  /*margin-left: */
+  margin-top: -2%;
+  margin-bottom: 5%;
+}
+
+.header img {
+  float: left; 
+  margin-right: -25%;
+  margin-left: 25%;
+}
+
+.header h2 {
+  font-size: 2em;
+  line-height: 1.5em;
 }
 
 .centered {
   text-align: center;
 }
 
+.centeredImg {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 0;
+}
+
 .date {
-  padding-top: 5%;
+  padding-top: 1%;
+}
+
+.social {
+  text-align: center;
+  /*margin-top: 3%;*/
+  color: #373d3f;
+}
+
+.social > span {
+  margin: .5% 1% auto 1%;
+}
+
+.social img {
+  float: right;
+  padding-right: 2%;
+  margin-top: 1%;
+}
+
+.social a:hover {
+  color: #373d3f;
+}
+
+.date > form {
+  /*float: right;*/
+  margin-top: 2%;
+}
+
+.updates > h2 {
+  float: left;
+  margin-right: 40px;
+}
+
+.contactUs {
+  clear: both;
 }
