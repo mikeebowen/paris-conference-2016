@@ -140,6 +140,9 @@ a:hover {
   footer {
     bottom: auto;
   }
+  .date {
+    margin-top: 0;
+  }
 
 }
 
