@@ -140,10 +140,17 @@ a:hover {
   footer {
     bottom: auto;
   }
+
+}
+
+@media all and (max-height: 750px) {
   .date {
     margin-top: 0;
   }
 
+  .contaceInfo {
+    margin-bottom: 25px; 
+  }
 }
 
 @media all and (max-height: 1100px) {
