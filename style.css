@@ -12,12 +12,13 @@ img {
 
 h1, h2 {
   color: #373d3f;
-  font-size: 3em;
+  /*font-size: 3em;*/
+  font-size: 4em;
 }
 
 footer {
   position: absolute;
-  bottom: 0 !important;
+  bottom: 0;
   width: 100% !important;
   /*height: 50px !important;*/
   background-color: #d8d9d4;
@@ -44,7 +45,7 @@ a:hover {
 
 .header h2 {
   font-size: 2em;
-  line-height: 1.5em;
+  /*line-height: 1.5em;*/
 }
 
 .centered {
@@ -91,4 +92,60 @@ a:hover {
 
 .contactUs {
   clear: both;
+}
+
+@media all and (max-width: 1400px) {
+  .header img {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3%;
+    margin-top: -3%;
+  }
+  
+}
+
+@media all and (max-width: 768px) {
+
+  h2 {
+    font-size: 3em;
+  }
+  
+  .extendLogo {
+    width: 80%;
+  }
+
+  .updates > h2 {
+    float: none;
+  }
+
+  .social img {
+    float: none;
+  }
+
+  .header img {
+    width: 30%;
+
+  }
+
+}
+
+@media all and (max-width: 450px) {
+  .contaceInfo > h2 {
+    font-size: 2em;
+  }
+}
+
+@media all and (max-height: 650px) {
+  footer {
+    /*position: relative;*/
+    bottom: auto;
+  }
+
+}
+
+@media all and (max-height: 1100px) {
+  h2 {
+    font-size: 3em;
+  }
 }
