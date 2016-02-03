@@ -120,6 +120,10 @@ a:hover {
     float: none;
   }
 
+  .theForm {
+    padding-top: 0;
+  }
+
   .social img {
     float: none;
   }
