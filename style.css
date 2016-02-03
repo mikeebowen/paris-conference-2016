@@ -32,9 +32,8 @@ a:hover {
 }
 
 .header {
-  /*margin-left: */
   margin-top: -2%;
-  margin-bottom: 5%;
+  /*margin-bottom: 5%;*/
 }
 
 .header img {
@@ -64,7 +63,6 @@ a:hover {
 
 .social {
   text-align: center;
-  /*margin-top: 3%;*/
   color: #373d3f;
 }
 
@@ -83,7 +81,6 @@ a:hover {
 }
 
 .date > form {
-  /*float: right;*/
   margin-top: 2%;
 }
 
