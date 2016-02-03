@@ -31,7 +31,7 @@ a:hover {
 }
 
 .header {
-  margin-top: -2%;
+  /*margin-top: -2%;*/
 }
 
 .header img {
@@ -77,8 +77,8 @@ a:hover {
   color: #373d3f;
 }
 
-.date > form {
-  margin-top: 2%;
+.theForm {
+  /*margin-top: 2%;*/
 }
 
 .updates > h2 {
