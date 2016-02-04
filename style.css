@@ -18,7 +18,7 @@ h1, h2 {
 footer {
   position: absolute;
   bottom: 0;
-  width: 100% !important;
+  width: 100%;
   background-color: #d8d9d4;
 }
 
@@ -43,10 +43,6 @@ a:hover {
 
 .centered {
   text-align: center;
-}
-
-.rightAligned {
-  text-align: right;
 }
 
 .centeredImg {
@@ -84,24 +80,11 @@ a:hover {
   color: #373d3f;
 }
 
-/*.theForm {
-  padding-top: 16px;
-  margin-left: 10%;
-}
-
-.form button {
-  margin-bottom: 6px;
-}*/
-
 .formDiv {
-  /*height:auto; 
-  margin:0 auto;*/
   text-align: center;
 }
 
 .formDiv form {
-  /*width:50%; 
-  margin:0 auto;*/
   display: inline-block;
   width: 100%;
 }
@@ -113,12 +96,7 @@ a:hover {
 }
 
 .formDiv button {
- /* display:block;
-  margin:0 auto;*/
-  /*float: right;*/
   margin-left: 1%;
-  /*margin-bottom: 2%;*/
-  /*width: 10%;*/
   margin-bottom: 25px;
 }
 
@@ -170,10 +148,6 @@ a:hover {
 
   }
 
-  .theForm {
-    margin-left: 0;
-  }
-
 }
 
 @media all and (max-width: 650px) {
@@ -205,17 +179,7 @@ a:hover {
   }
 }
 
-@media all and (max-height: 1100px) {
-  h2 {
-    /*font-size: 3em;*/
-  }
-
-  .moreInfo {
-    float: left;
-  }
-}
-
-@media all and (max-height: 900px) {
+@media all and (max-height: 1050px) {
 
   body { 
     background: url(img/OFF14_Austin_Tal_Alejandro_BrittanyA_03.png) no-repeat center center fixed; 
