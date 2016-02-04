@@ -26,12 +26,24 @@ footer {
   /*margin-bottom: 300px;*/
 }
 
+.contactUsFooterMobile p {
+  text-align: center;
+  font-size: 2em;
+}
+
 .contactUsFooter p {
-  font-size: 2.5em;
+  font-size: 2vw;
   text-align: left;
   float: left;
   margin-top: 10px;
 }
+
+/*.contactUsFooter {
+  margin-left: 2%;
+  position: absolute;
+  bottom: 15px;
+  z-index: 1000;
+}*/
 
 a:link {
   color: #373d3f;
@@ -75,6 +87,7 @@ a:link {
 
 .social {
   color: #373d3f;
+  text-align: left;
 }
 
 
@@ -98,6 +111,7 @@ a:link {
 
 .meetupLogo {
   height: 50px;
+  /*margin-left: -19px;*/
 }
 
 .formDiv {
@@ -130,7 +144,7 @@ a:link {
 }
 
 .firstSocial {
-  margin-left: 10%;
+  /*margin-left: 10%;*/
 }
 
 @media all and (max-width: 1400px) {
@@ -142,6 +156,38 @@ a:link {
     margin-top: -3%;
   }
   
+}
+
+@media all and (max-width: 1000px) {
+  .socialIcon {
+    text-align: center;
+  }
+
+  .laReserveLogoMobile {
+    margin-left: 15px;
+  }
+
+  .social {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .laReserveLogo {
+    margin-top: 15px;
+    width: 15%;
+    float: right;
+  }
+
+  .socialIcon {
+    font-size: 1em !important;
+    margin-top: 10px;
+  }
+
+  .meetupLogo {
+    height: 30px;
+    margin-top: 10px;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -164,7 +210,7 @@ a:link {
   }
 
   .social img {
-    float: none;
+    /*float: none;*/
   }
 
   .header img {
@@ -186,9 +232,17 @@ a:link {
   }
 }
 
-@media all and (max-height: 768px) {
+@media all and (max-height: 650px) {
   footer {
     bottom: auto;
+  }
+
+  .contactUsFooter p {
+    float: none;
+  }
+
+  .laReserveLogo {
+    float: none;
   }
 
 }
