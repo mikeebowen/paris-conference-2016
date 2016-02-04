@@ -12,7 +12,7 @@ img {
 
 h1, h2 {
   color: #373d3f;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 footer {
@@ -22,28 +22,18 @@ footer {
   background-color: #d8d9d4;
 }
 
-.contactUsFooter {
-  /*margin-bottom: 300px;*/
-}
-
 .contactUsFooterMobile p {
   text-align: center;
   font-size: 2em;
 }
 
 .contactUsFooter p {
-  font-size: 2vw;
+  font-size: 1.5vw;
   text-align: left;
   float: left;
   margin-top: 10px;
+  margin-right: 10%;
 }
-
-/*.contactUsFooter {
-  margin-left: 2%;
-  position: absolute;
-  bottom: 15px;
-  z-index: 1000;
-}*/
 
 a:link {
   color: #373d3f;
@@ -51,6 +41,7 @@ a:link {
 
 .extendLogo {
   margin-bottom: -3%;
+  width: 50%;
 }
 
 .header {
@@ -58,12 +49,14 @@ a:link {
 }
 
 .header h2 {
-  font-size: 3em;
+  font-size: 2.25em;
   color: #1ebaed;
 }
 
 .header img {
   margin-bottom: 2%;
+  margin-top: 2%;
+  width: 15%;
 }
 
 .centered {
@@ -111,7 +104,6 @@ a:link {
 
 .meetupLogo {
   height: 50px;
-  /*margin-left: -19px;*/
 }
 
 .formDiv {
@@ -143,22 +135,22 @@ a:link {
   clear: both;
 }
 
-.firstSocial {
-  /*margin-left: 10%;*/
-}
-
 @media all and (max-width: 1400px) {
   .header img {
     float: none;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 3%;
-    margin-top: -3%;
   }
+
+  .contactUsFooter p {
+  font-size: 2vw;
+}
+
   
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1080px) {
   .socialIcon {
     text-align: center;
   }
@@ -207,10 +199,6 @@ a:link {
 
   .social {
     padding-left: 0;
-  }
-
-  .social img {
-    /*float: none;*/
   }
 
   .header img {

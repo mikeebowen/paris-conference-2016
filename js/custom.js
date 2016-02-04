@@ -7,7 +7,7 @@ function showMobile () {
   var laReserveLogoMobile = document.getElementsByClassName('laReserveLogoMobile');
   var windowWidth = window.innerWidth;
 
-  if (windowWidth > 975) {
+  if (windowWidth > 1080) {
     for (var i = 0; i < contactUsFooterMobile.length; i++) {
       contactUsFooterMobile[i].style.display = 'none';
     }
@@ -22,7 +22,7 @@ function showMobile () {
     }
   }
 
-  if (windowWidth <= 975) {
+  if (windowWidth <= 1080) {
     for (var i = 0; i < contactUsFooter.length; i++) {
       contactUsFooter[i].style.display = 'none';
     }
