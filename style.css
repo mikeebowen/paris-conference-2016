@@ -144,8 +144,9 @@ a:link {
   }
 
   .contactUsFooter p {
-  font-size: 2vw;
-}
+    font-size: 2vw;
+    margin-right: 0;
+  }
 
   
 }
