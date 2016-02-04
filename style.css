@@ -190,7 +190,7 @@ a:hover {
   }
 }
 
-@media all and (max-width: 1050px) {
+@media all and (max-width: 1050px) and (min-width: 768px) {
   body { 
     background: url(img/OFF14_Austin_Tal_Alejandro_BrittanyA_03.png) no-repeat center center fixed; 
     -webkit-background-size: cover?;
