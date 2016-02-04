@@ -22,6 +22,10 @@ footer {
   background-color: #d8d9d4;
 }
 
+.contactUsFooter {
+  /*margin-bottom: 300px;*/
+}
+
 .contactUsFooter p {
   font-size: 2.5em;
   text-align: left;
