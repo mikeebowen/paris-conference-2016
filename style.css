@@ -87,8 +87,7 @@ a:link {
 
 .social {
   color: #373d3f;
-  margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -166,6 +165,10 @@ a:link {
 
   .laReserveLogoMobile {
     margin-left: 15px;
+  }
+
+  .social {
+    text-align: center;
   }
 }
 
