@@ -5,7 +5,10 @@ function showMobile () {
   var contactUsFooter = document.getElementsByClassName('contactUsFooter');
   var laReserveLogo = document.getElementsByClassName('laReserveLogo');
   var laReserveLogoMobile = document.getElementsByClassName('laReserveLogoMobile');
+  var headerMobile = document.getElementsByClassName('headerMobile');
+  var headerDesktop = document.getElementsByClassName('headerDesktop')
   var windowWidth = window.innerWidth;
+  var windowHeight = window.innerHeight;
 
   if (windowWidth > 1080) {
     for (var i = 0; i < contactUsFooterMobile.length; i++) {
@@ -36,6 +39,27 @@ function showMobile () {
       laReserveLogoMobile[i].style.display = 'inline';
     }
   }
+
+  if (windowWidth > 768) {
+    for (var i = 0; i < headerMobile.length; i++) {
+      headerMobile[i].style.display = 'none';
+    }
+
+    for (var i = 0; i < headerDesktop.length; i++) {
+      headerDesktop[i].style.display = 'inline';
+    }
+  }
+
+  if (windowWidth <= 768) {
+    for (var i = 0; i < headerMobile.length; i++) {
+      headerMobile[i].style.display = 'inline';
+    }
+
+    for (var i = 0; i < headerDesktop.length; i++) {
+      headerDesktop[i].style.display = 'none';
+    }
+  }
+
 }
 
 showMobile();
