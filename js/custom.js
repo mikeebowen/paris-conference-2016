@@ -6,7 +6,8 @@ function showMobile () {
   var laReserveLogo = document.getElementsByClassName('laReserveLogo');
   var laReserveLogoMobile = document.getElementsByClassName('laReserveLogoMobile');
   var headerMobile = document.getElementsByClassName('headerMobile');
-  var headerDesktop = document.getElementsByClassName('headerDesktop')
+  var headerDesktop = document.getElementsByClassName('headerDesktop');
+  var theFooter = document.getElementById('theFooter');
   var windowWidth = window.innerWidth;
   var windowHeight = window.innerHeight;
 
@@ -59,6 +60,14 @@ function showMobile () {
       headerDesktop[i].style.display = 'none';
     }
   }
+
+  if (windowHeight > 520) {
+    theFooter.style.position = 'fixed';
+  }
+
+  if (windowHeight <= 520) {
+    theFooter.style.position = 'relative';
+  };
 
 }
 
