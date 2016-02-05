@@ -16,7 +16,6 @@ h1, h2 {
 }
 
 footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: #d8d9d4;
@@ -54,7 +53,6 @@ a:link {
 }
 
 .header img {
-  /*margin-bottom: 2%;*/
   margin-bottom: 3%;
   margin-top: 2%;
   width: 15%;
@@ -146,7 +144,6 @@ a:link {
     float: none;
     margin-right: auto;
     margin-left: auto;
-    /*margin-bottom: 3%;*/
   }
 
   .contactUsFooter p {
@@ -176,13 +173,6 @@ a:link {
 
   .social {
     text-align: center;
-  }
-}
-
-@media all and (min-height: 500px) {
-  footer {
-    position: absolute;
-    bottom: 0;
   }
 }
 
