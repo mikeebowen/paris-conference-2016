@@ -59,24 +59,6 @@ function showMobile () {
       headerDesktop[i].style.display = 'none';
     }
   }
-/*
-  if (windowWidth > 768) {
-    for (var i = 0; i < contactUsFooterMobile.length; i++) {
-      headerMobile[i].style.display = 'none';
-    }
-    for (var i = 0; i < contactUsFooter.length; i++) {
-      headerDesktop[i].style.display = 'inline';
-    }
-  }
-
-  if (windowWidth <= 768) {
-    for (var i = 0; i < contactUsFooterMobile.length; i++) {
-      headerMobile[i].style.display = 'inline';
-    }
-    for (var i = 0; i < contactUsFooter.length; i++) {
-      headerDesktop[i].style.display = 'none';
-    }
-  }*/
 
 }
 

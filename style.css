@@ -57,6 +57,7 @@ a:link {
   margin-bottom: 2%;
   margin-top: 2%;
   width: 15%;
+  min-width: 200px;
 }
 
 .headerDesktop img {
@@ -214,11 +215,9 @@ a:link {
     padding-left: 0;
   }
 
-  .header img {
-    /*width: 30%;*/
-
+  .headerMobile h2 {
+    font-size: 2em;
   }
-
 }
 
 @media all and (max-width: 650px) {
