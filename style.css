@@ -59,6 +59,10 @@ a:link {
   width: 15%;
 }
 
+.headerDesktop img {
+  margin-right: 20px !important;
+}
+
 .centered {
   text-align: center;
 }
@@ -151,6 +155,14 @@ a:link {
   
 }
 
+@media all and (max-width: 1200px) {
+
+  .headerMobile h2 {
+    font-size: 3vw;
+  }
+
+}
+
 @media all and (max-width: 1080px) {
   .socialIcon {
     text-align: center;
@@ -203,7 +215,7 @@ a:link {
   }
 
   .header img {
-    width: 30%;
+    /*width: 30%;*/
 
   }
 
@@ -246,7 +258,7 @@ a:link {
   }
 }
 
-@media all and (max-height: 1050px) {
+@media all and (max-height: 950px) {
 
   body { 
     background: url(img/OFF14_Austin_Tal_Alejandro_BrittanyA_03.png) no-repeat center center fixed; 
