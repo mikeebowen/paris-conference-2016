@@ -232,11 +232,15 @@ a:link {
   }
 }
 
-@media all and (max-height: 650px) {
+@media all and (max-width: 350px) {
   footer {
     bottom: auto;
   }
 
+}
+
+@media all and (max-height: 650px) {
+  
   .contactUsFooter p {
     float: none;
   }
