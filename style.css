@@ -54,7 +54,8 @@ a:link {
 }
 
 .header img {
-  margin-bottom: 2%;
+  /*margin-bottom: 2%;*/
+  margin-bottom: 3%;
   margin-top: 2%;
   width: 15%;
   min-width: 200px;
@@ -145,7 +146,7 @@ a:link {
     float: none;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 3%;
+    /*margin-bottom: 3%;*/
   }
 
   .contactUsFooter p {
@@ -175,6 +176,13 @@ a:link {
 
   .social {
     text-align: center;
+  }
+}
+
+@media all and (min-height: 500px) {
+  footer {
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -232,15 +240,11 @@ a:link {
   }
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-height: 500px) {
   footer {
     bottom: auto;
   }
 
-}
-
-@media all and (max-height: 650px) {
-  
   .contactUsFooter p {
     float: none;
   }
