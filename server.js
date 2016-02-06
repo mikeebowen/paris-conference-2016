@@ -10,8 +10,12 @@ var bodyparser = require('body-parser');
 
 app.use(express.static(__dirname + '/'));
 
-app.get('/tests', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile('./index.html');
+});
+
+app.get('/teaorcoffee', function (req, res) {
+  res.sendFile(__dirname + '/views/teaorcoffee.html')
 });
 
 app.listen(port, function () {
