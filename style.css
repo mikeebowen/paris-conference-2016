@@ -16,8 +16,8 @@ h1, h2 {
 }
 
 footer {
-  height: 80px;
-  position: absolute;
+  min-height: 80px;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #d8d9d4;
@@ -25,20 +25,29 @@ footer {
 
 .videoContainer {
   position: relative;
-  padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+  padding-bottom: 56.25%;
   padding-top: 30px;
-  /*height: 0;*/
+  height: 0;
   overflow: hidden;
-  min-height: 315px;
 }
 
-.videoContainer iframe {
+.videoContainer iframe,  
+.videoContainer object,  
+.videoContainer embed {
   position: absolute;
   top: 0;
-  /*left: 0;*/
+  left: 0;
   width: 100%;
-  max-height: 315px;
-  max-width: 560px;
+  height: 100%;
+}
+#videoContainerWrapper {
+  /*width: 640px;*/
+  width: 30%;
+  float:none;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 100%;
+  min-width: 400px;
 }
 
 .contactUsFooter p {
@@ -107,8 +116,9 @@ a:visited {
 }
 
 .social {
-  color: #373d3f;
+  color: #000;
   text-align: center;
+  padding-top: 7px;
 }
 
 
@@ -127,11 +137,11 @@ a:visited {
 }
 
 .social a:hover {
-  color: #373d3f;
+  color: #000;
 }
 
 .contactUsFooter a:hover {
-  color: #f2f3f4;
+  color: #000;
 }
 
 .meetupLogo {
@@ -179,6 +189,14 @@ a:visited {
     margin-right: 0;
   }
 
+  #videoContainerWrapper {
+    width: 50%;
+  }
+
+  footer {
+    bottom: auto;
+  }
+
   
 }
 
@@ -212,12 +230,12 @@ a:visited {
   }
 
   .socialIcon {
-    font-size: 1em !important;
+    font-size: 1.5em !important;
     margin-top: 10px;
   }
 
   .meetupLogo {
-    height: 30px;
+    height: 37px;
     margin-top: 10px;
   }
 }
@@ -250,11 +268,24 @@ a:visited {
   h2 {
     line-height: 1.5em;
   }
+
+  .socialIcon {
+    margin-top: 10px;
+  }
+
+  .meetupLogo {
+    margin-top: 10px;
+  }
 }
 
 @media all and (max-width: 450px) {
   .contaceInfo > h2 {
     font-size: 2em;
+  }
+
+  #videoContainerWrapper {
+    width: 95%;
+    min-width: 10px;
   }
 }
 
@@ -268,6 +299,9 @@ a:visited {
     float: none;
   }
 
+  footer {
+    height: auto
+
 }
 
 @media all and (max-height: 850px) {
@@ -280,15 +314,7 @@ a:visited {
   }
 }
 
-@media all and (max-height: 850px) and (max-width: 825px) {
-
-    footer {
-    bottom: auto;
-  }
-
-}
-
-@media all and (max-height: 760px) and (min-width: 825px) {
+@media all and (max-height: 760px) and (min-width: 850px) {
 
     footer {
       bottom: auto;

@@ -56,7 +56,7 @@ function showMobile () {
     }
   }
 
-  if (windowWidth < 768) {
+/*  if (windowWidth < 768) {
     videoContainerWrapper.style.width = '90%';
     leftSpacer.style.width = '1%';
     rightSpacer.style.width = '9%';
@@ -76,7 +76,7 @@ function showMobile () {
 
   if (windowWidth > 1400) {
     leftSpacer.style.width = '28.1667%';
-  }
+  }*/
 
 }
 
