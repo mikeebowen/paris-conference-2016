@@ -6,6 +6,8 @@ function showMobile () {
   var headerMobile = document.getElementsByClassName('headerMobile');
   var headerDesktop = document.getElementsByClassName('headerDesktop');
   var wrapper = document.getElementById('wrapper');
+  var footer = document.getElementById('theFooter');
+  var footerHeight = footer.clientHeight;
   var wrapperHeight = wrapper.clientHeight;
   var windowWidth = window.innerWidth;
   var windowHeight = window.innerHeight;
@@ -57,10 +59,10 @@ function showMobile () {
   //reset css value for wrapper height
   wrapper.style.height = '';
 
-  if (wrapperHeight < windowHeight) {
+  if (wrapperHeight + footerHeight < windowHeight) {
     wrapper.style.height = windowHeight + 'px';
   }
-  if (wrapperHeight > windowHeight) {
+  if (wrapperHeight + footerHeight > windowHeight) {
     wrapper.style.height = wrapperHeight + 'px';
   }
 
