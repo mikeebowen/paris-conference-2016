@@ -5,10 +5,8 @@ function showMobile () {
   var laReserveLogo = document.getElementsByClassName('laReserveLogo');
   var headerMobile = document.getElementsByClassName('headerMobile');
   var headerDesktop = document.getElementsByClassName('headerDesktop');
-  var theFooter = document.getElementById('theFooter');
-  var videoContainerWrapper = document.getElementById('videoContainerWrapper');
-  var leftSpacer = document.getElementById('leftSpacer');
-  var rightSpacer = document.getElementById('rightSpacer');
+  var wrapper = document.getElementById('wrapper');
+  var wrapperHeight = wrapper.clientHeight;
   var windowWidth = window.innerWidth;
   var windowHeight = window.innerHeight;
 
@@ -55,28 +53,16 @@ function showMobile () {
       headerDesktop[i].style.display = 'none';
     }
   }
+  
+  //reset css value for wrapper height
+  wrapper.style.height = '';
 
-/*  if (windowWidth < 768) {
-    videoContainerWrapper.style.width = '90%';
-    leftSpacer.style.width = '1%';
-    rightSpacer.style.width = '9%';
+  if (wrapperHeight < windowHeight) {
+    wrapper.style.height = windowHeight + 'px';
   }
-
-  if (windowWidth >= 768 && windowWidth <= 1050) {
-    videoContainerWrapper.style.width = '60%';
-    leftSpacer.style.width = '20%';
-    rightSpacer.style.width = '20%';
+  if (wrapperHeight > windowHeight) {
+    wrapper.style.height = wrapperHeight + 'px';
   }
-
-  if (windowWidth >= 1050 && windowWidth <= 1400) {
-    videoContainerWrapper.style.width = '41.6666666667%';
-    leftSpacer.style.width = '29.1666666667%';
-    rightSpacer.style.width = '29.1666666667%';
-  }
-
-  if (windowWidth > 1400) {
-    leftSpacer.style.width = '28.1667%';
-  }*/
 
 }
 
