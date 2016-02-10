@@ -57,14 +57,14 @@ function showMobile () {
     }
   }
   
-  console.log('hola mundo\n', 'wrapperHeight', wrapperHeight, '\n windowHeight', windowHeight, '\n windowClientHeight', windowClientHeight, '\n screen.height', screen.height, '\n document.documentElement.clientHeight', document.documentElement.clientHeight);
+  console.log('hola mundo 2\n', 'wrapperHeight', wrapperHeight, '\n windowHeight', windowHeight, '\n windowClientHeight', windowClientHeight, '\n screen.height', screen.height, '\n document.documentElement.clientHeight', document.documentElement.clientHeight);
   //if the window is taller set the wrapper height to the window height
   if (windowHeight > wrapperHeight) {
     wrapper.style.height = (windowHeight - 80) + 'px';
   } 
   // if the wrapper is taller reset the wrapper height value
   if (windowHeight <= wrapperHeight) {
-    wrapper.style.height = '';
+    wrapper.style.height = wrapperHeight + 'px';
     
   };
 }
