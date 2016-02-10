@@ -61,9 +61,11 @@ function showMobile () {
 
   if (wrapperHeight - (footerHeight + 120) < windowHeight) {
     wrapper.style.height = windowHeight + 'px';
+    console.log('wrapper is taller');
   }
   if (wrapperHeight - (footerHeight + 120) > windowHeight) {
     wrapper.style.height = wrapperHeight + 'px';
+    console.log('window is taller');
   }
 
 }
