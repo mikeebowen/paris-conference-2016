@@ -57,27 +57,17 @@ function showMobile () {
     }
   }
   
-  //reset css value for wrapper height
   console.log('wrapperHeight', wrapperHeight, '\n windowHeight', windowHeight, '\n windowClientHeight', windowClientHeight, '\n screen.height', screen.height, '\n document.documentElement.clientHeight', document.documentElement.clientHeight);
+  //if the window is taller set the wrapper height to the window height
   if (windowHeight > wrapperHeight) {
     wrapper.style.height = (windowHeight - 90) + 'px';
   } 
+  // if the wrapper is taller reset the wrapper height value
   if (windowHeight <= wrapperHeight) {
     wrapper.style.height = '';
     
   };
-
-
-  /*if (wrapperHeight + (footerHeight + 50) < windowHeight) {
-    wrapper.style.height = (windowHeight - 110) + 'px';
-    console.log('window is taller', wrapper.style.height);
-  }
-  if (wrapperHeight + (footerHeight + 50) > windowHeight) {
-    wrapper.style.height = (wrapperHeight - 110) + 'px';
-    console.log('wrapper is taller', wrapper.style.height);
-  }
-*/
 }
 
-showMobile();
+window.onload = function () {showMobile()};
 window.onresize = function () {showMobile()};
