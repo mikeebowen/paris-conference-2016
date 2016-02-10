@@ -16,7 +16,7 @@ h1, h2 {
 }
 
 footer {
-  min-height: 90px;
+  height: 90px;
   /*position: fixed;*/
   /*bottom: auto;*/
   width: 100%;
