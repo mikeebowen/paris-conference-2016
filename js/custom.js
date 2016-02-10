@@ -64,7 +64,7 @@ function showMobile () {
   } 
   // if the wrapper is taller reset the wrapper height value
   if (windowHeight <= wrapperHeight) {
-    wrapper.style.height = wrapperHeight + 'px';
+    wrapper.style.height = (wrapperHeight - 80) + 'px';
     
   };
 }
