@@ -59,11 +59,13 @@ function showMobile () {
   //reset css value for wrapper height
   wrapper.style.height = '';
 
-  if (wrapperHeight + footerHeight < windowHeight) {
-    wrapper.style.height = windowHeight + 'px';
+  if (wrapperHeight < windowHeight) {
+    var newWindowHeight = windowHeight - 80;
+    wrapper.style.height = newWindowHeight + 'px';
   }
-  if (wrapperHeight + footerHeight > windowHeight) {
-    wrapper.style.height = wrapperHeight + 'px';
+  if (wrapperHeight > windowHeight) {
+    var newWrapperHeight = wrapperHeight - 80;
+    wrapper.style.height = newWrapperHeight + 'px';
   }
 
 }
