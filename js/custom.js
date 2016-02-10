@@ -9,6 +9,7 @@ function showMobile () {
   var footer = document.getElementById('theFooter');
   var footerHeight = footer.clientHeight;
   var wrapperHeight = wrapper.clientHeight;
+  var windowClientHeight = window.clientHeight;
   var windowWidth = window.innerWidth;
   var windowHeight = window.innerHeight;
 
@@ -57,17 +58,25 @@ function showMobile () {
   }
   
   //reset css value for wrapper height
-  wrapper.style.height = '';
+  console.log('wrapperHeight', wrapperHeight, '\n windowHeight', windowHeight, '\n windowClientHeight', windowClientHeight, '\n screen.height', screen.height, '\n document.documentElement.clientHeight', document.documentElement.clientHeight);
+  if (windowHeight > wrapperHeight) {
+    wrapper.style.height = (windowHeight - 90) + 'px';
+  } 
+  if (windowHeight <= wrapperHeight) {
+    wrapper.style.height = '';
+    
+  };
 
-  if (wrapperHeight - (footerHeight + 50) < windowHeight) {
-    wrapper.style.height = (windowHeight - 70) + 'px';
+
+  /*if (wrapperHeight + (footerHeight + 50) < windowHeight) {
+    wrapper.style.height = (windowHeight - 110) + 'px';
     console.log('window is taller', wrapper.style.height);
   }
-  if (wrapperHeight - (footerHeight + 50) > windowHeight) {
-    wrapper.style.height = (wrapperHeight - 70) + 'px';
+  if (wrapperHeight + (footerHeight + 50) > windowHeight) {
+    wrapper.style.height = (wrapperHeight - 110) + 'px';
     console.log('wrapper is taller', wrapper.style.height);
   }
-
+*/
 }
 
 showMobile();
