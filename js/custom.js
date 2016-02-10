@@ -60,10 +60,10 @@ function showMobile () {
   wrapper.style.height = '';
 
   if (wrapperHeight - footerHeight < windowHeight) {
-    wrapper.style.height = windowHeight - 95 + 'px';
+    wrapper.style.height = windowHeight + 'px';
   }
   if (wrapperHeight - footerHeight > windowHeight) {
-    wrapper.style.height = wrapperHeight - 95 + 'px';
+    wrapper.style.height = wrapperHeight + 'px';
   }
 
 }
