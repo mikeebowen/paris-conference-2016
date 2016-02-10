@@ -59,10 +59,10 @@ function showMobile () {
   //reset css value for wrapper height
   wrapper.style.height = '';
 
-  if (wrapperHeight - (footerHeight + 50) < windowHeight) {
+  if (wrapperHeight - (footerHeight + 120) < windowHeight) {
     wrapper.style.height = windowHeight + 'px';
   }
-  if (wrapperHeight - (footerHeight + 50) > windowHeight) {
+  if (wrapperHeight - (footerHeight + 120) > windowHeight) {
     wrapper.style.height = wrapperHeight + 'px';
   }
 
