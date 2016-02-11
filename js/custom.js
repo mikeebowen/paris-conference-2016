@@ -8,16 +8,17 @@ function showMobile () {
   var wrapper = document.getElementById('wrapper');
   var footer = document.getElementById('theFooter');
   var footerHeight = footer.clientHeight;
-  var wrapperHeight = wrapper.clientHeight;
+  var wrapperHeight = wrapper.offsetHeight;
   var windowClientHeight = window.clientHeight;
   var windowWidth = window.innerWidth;
   var windowHeight = window.innerHeight;
+  var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
 
-  var body = document.body,
-    html = document.documentElement;
+  var body = document.body;
+  var html = document.documentElement;
 
-var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+  var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+  var comparisonHeight;
 
 
 
@@ -64,29 +65,25 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
       headerDesktop[i].style.display = 'none';
     }
   }
+
+  if (windowHeight <= height) {
+    comparisonHeight = height;
+  }
+  if (windowHeight > height) {
+    comparisonHeight = windowHeight;
+  }
   
-  console.log('hola mundo 2\n', 'wrapperHeight', wrapperHeight, '\n windowHeight', windowHeight, '\n windowClientHeight', windowClientHeight, '\n screen.height', screen.height, '\n document.documentElement.clientHeight', document.documentElement.clientHeight, '\nfooterHeight', footerHeight, 'height', height);
-  wrapper.style.height = '';
-  //if the window is taller set the wrapper height to the window height
-  if (height > wrapperHeight + 100) {
-    var diff = height - windowHeight + 60;
-    wrapper.style.height = (height - diff) + 'px';
-    // footer.style.position = 'fixed';
-    // footer.style.bottom = 0;
-  } 
-  // if the wrapper is taller reset the wrapper height value
-  if (height <= wrapperHeight + 100) {
-    wrapper.style.height = '100%';
-    // footer.style.position = 'relative';
-    // footer.style.bottom = 'auto';
+  if (comparisonHeight > wrapperHeight) {
+    footer.style.position = 'fixed';
+    footer.style.bottom = 0;
+  } else {
+    footer.style.position = 'relative';
+    footer.style.bottom = 'auto';
     
   }
-  var sum = 0;
-  for (var i = 0; i < document.getElementsByTagName('div').length; i++) {
-    sum += document.getElementsByTagName('div')[i].clientHeight
-    console.log(document.getElementsByTagName('div')[i].clientHeight, '\n', sum);
-  };
+  console.log(footer.style);
 }
 
+window.setTimeout(showMobile(), 1);
 window.onload = function () {showMobile()};
 window.onresize = function () {showMobile()};
