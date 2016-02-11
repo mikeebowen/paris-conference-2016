@@ -72,10 +72,12 @@ function showMobile () {
   if (windowHeight > height) {
     comparisonHeight = windowHeight;
   }
-  
-  if (comparisonHeight > wrapperHeight) {
-    footer.style.position = 'fixed';
-    footer.style.bottom = 0;
+  console.log('hola mundo 2\n', 'wrapperHeight', wrapperHeight, '\n windowHeight', windowHeight, '\n windowClientHeight', windowClientHeight, '\n screen.height', screen.height, '\n document.documentElement.clientHeight', document.documentElement.clientHeight, '\nheight', height);
+  if (windowHeight > wrapperHeight + 80) {
+    // footer.style.position = 'fixed';
+    // footer.style.bottom = 0;
+    // wrapper.style.height = (wrapperHeight) + 'px';
+    wrapper.style.height = (windowHeight - 80) + 'px';
   } else {
     footer.style.position = 'relative';
     footer.style.bottom = 'auto';
@@ -84,6 +86,18 @@ function showMobile () {
   console.log(footer.style);
 }
 
-window.setTimeout(showMobile(), 1);
-window.onload = function () {showMobile()};
-window.onresize = function () {showMobile()};
+// window.setTimeout(showMobile(), 1);
+// window.onload = function () {showMobile()};
+// window.onresize = function () {showMobile()};
+
+$(function () {
+  showMobile();
+});
+
+$(window).load(function () {
+  showMobile();
+});
+
+$(window).resize(function () {
+  showMobile();
+})
